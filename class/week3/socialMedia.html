@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 3 - Social Media</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <style media="screen">
+    .height1{
+      height: 60px;
+    }
+    .height2{
+      height: 180px;
+    }
+
+    .height3{
+      height: 100px;
+    }
+    .height4{
+      height: 90px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <!--  START ROW 1 -->
+        <div class="row">
+          <div class="col-md-12 height1 randomColor">
+
+          </div>
+        </div>
+      <!--  END ROW 1 -->
+
+      <!--  START ROW 2-->
+        <div class="row">
+            <div class="col-md-3 height2 randomColor">
+            </div>
+            <div class="col-md-7 height2 randomColor">
+              <!--   NESTED ROW 1 BEGINS -->
+                <div class="row">
+                  <div class="col-md-3 height4 randomColor">
+
+                  </div>
+                  <div class="col-md-9 height4 randomColor">
+
+                  </div>
+                </div>
+              <!--   NESTED ROW 2 BEGINS -->
+                <div class="row">
+                  <div class="col-md-3 height4 randomColor">
+
+                  </div>
+                  <div class="col-md-9 height4 randomColor">
+
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-2 height2 randomColor">
+
+            </div>
+        </div>
+        <!--  END ROW 2-->
+
+        <!--  START ROW 3 -->
+        <div class="row">
+            <div class="col-md-3 height2 randomColor">
+
+            </div>
+            <div class="col-md-7 height2 randomColor">
+              <!--   NESTED ROW 3 BEGINS -->
+                <div class="row">
+                  <div class="col-md-3 height4 randomColor">
+
+                  </div>
+                  <div class="col-md-9 height4 randomColor">
+
+                  </div>
+                </div>
+              <!--   NESTED ROW 4 BEGINS -->
+                <div class="row">
+                  <div class="col-md-3 height4 randomColor">
+
+                  </div>
+                  <div class="col-md-9 height4 randomColor">
+
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-2 height2 randomColor">
+
+            </div>
+        </div>
+        <!--  END ROW 3 -->
+
+        <!--  START ROW 4 -->
+        <div class="row">
+            <div class="col-md-3 height2 randomColor">
+
+            </div>
+            <div class="col-md-7 height2 randomColor">
+              <!--   NESTED ROW 5 BEGINS -->
+                <div class="row">
+                  <div class="col-md-3 height4 randomColor">
+
+                  </div>
+                  <div class="col-md-9 height4 randomColor">
+
+                  </div>
+                </div>
+
+              <!--   NESTED ROW 6 BEGINS -->
+                <div class="row">
+                  <div class="col-md-3 height4 randomColor">
+
+                  </div>
+                  <div class="col-md-9 height4 randomColor">
+
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-2 height2 randomColor">
+
+            </div>
+        </div>
+        <!--  END ROW 4 -->
+
+        <!--  START ROW 5 -->
+        <div class="row">
+          <div class="col-md-12 height3 randomColor">
+
+          </div>
+        </div>
+        <!--  END ROW 5 -->
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+      //when the document is loaded
+        $(document).ready(function() {
+          //this function gets a random color between 0 and 255
+          function getRandomColor() {
+            return Math.floor(Math.random() * 255);
+          }
+
+          //get all the elements (divs) with the class .randomColor
+          var randomColor = $(".randomColor");
+
+          //loop through all elements
+          //for each element, change the css background-color to RGB + three random colors
+          $.each(randomColor, function(index, item) {
+            $(this).css("background-color", "RGB(" + getRandomColor() + "," + getRandomColor() + "," + getRandomColor() + ")");
+          })
+        })
+      </script>
+  </body>
+</html>
