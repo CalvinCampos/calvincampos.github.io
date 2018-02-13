@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<style>
+@import url('https://fonts.googleapis.com/css?family=VT323');
+</style>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rankings</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style media="screen">
+
+    html, body {
+      height:100%;
+    }
+      .height1{
+        height: 250px;
+      }
+
+      .height2{
+        height: 500px;
+      }
+
+      .height3{
+        height: 50px;
+      }
+
+      .height4{
+        height: 150px;
+      }
+
+      .black{
+        background-color: black;
+      }
+
+      .garen{
+        background-image: url(images/garen.jpg);
+        max-width: 100%;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: -50px;
+      }
+
+      .teemo{
+        background-image: url(images/teemo.jpg);
+        max-width: 100%;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: -50px;
+      }
+
+      .flexSpaceAround{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .flexSingleItem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo{
+        width: 50%;
+      }
+
+      ul li{
+        margin-top: 1vw;
+        list-style-type: none;
+      }
+
+      p{
+        font-family: helvetica, sans-serif;
+        size: 24px;
+      }
+
+      h1, h2{
+        color: white;
+        font-family: "VT323", monospace;
+        text-transform: uppercase;
+        font-size: 50px;
+      }
+
+
+
+
+
+    </style>
+
+  </head>
+    <body>
+    <div class="container">
+      <div class ="row">
+        <div class="col-md-12 height1 black flexSingleItem">
+            <img src="images/logo.png" alt="league of legends logo" class="logo" />
+        </div>
+      </div>
+      <div class ="row">
+        <div class="col-md-12 height4 black">
+          <h1></h1>
+        </div>
+      </div>
+      <div class ="row">
+        <div class="col-md-12 height3 black nav">
+          <ul class="flexSpaceAround">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Links</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class ="row">
+        <div class="col-md-2 height2 garen">
+
+        </div>
+        <div class="col-md-8 height2">
+
+          <!-- html tables... finally my time to shine... -->
+
+    <table class="table table-hover">
+      <!-- Refer to "http://bootstrapdocs.com/v3.0.3/docs/css/#tables" for more boostrap styles!!! -->
+      <tr>
+        <th>Number</th>
+        <th>Champion Name</th>
+        <th>Position</th>
+        <th>Popularity (%)</th>
+        <th>Win Rate (%)</th>
+        <th>Ban Rate (%)</th>
+        <th>K/D/A</th>
+      </tr>
+      <tr>
+        <td>1.</td>
+        <td>Sion</td>
+        <td>Top</td>
+        <td>6.7</td>
+        <td>54.8</td>
+        <td>0.9</td>
+        <td>3.9/4.8/9.4</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>Warwick</td>
+        <td>Jungler</td>
+        <td>13.7</td>
+        <td>53.8</td>
+        <td>17.8</td>
+        <td>6.9/5.8/8.0</td>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td>Aurelion Sol</td>
+        <td>Mid</td>
+        <td>1.9</td>
+        <td>53.1</td>
+        <td>0.6</td>
+        <td>6.1/5.1/8.8</td>
+      </tr>
+      <tr>
+        <td>4.</td>
+        <td>Anivia</td>
+        <td>Mid</td>
+        <td>5.0</td>
+        <td>52.8</td>
+        <td>2.2</td>
+        <td>5.4/4.1/7.4</td>
+      </tr>
+      <tr>
+        <td>5.</td>
+        <td>Udyr</td>
+        <td>Jungler</td>
+        <td>4.1</td>
+        <td>52.8</td>
+        <td>1.4</td>
+        <td>5.9/5.1/6.0</td>
+      </tr>
+      <tr>
+        <td>6.</td>
+        <td>Janna</td>
+        <td>Support</td>
+        <td>20.8</td>
+        <td>52.7</td>
+        <td>11.0</td>
+        <td>1.6/4.5/13.5</td>
+      </tr>
+      <tr>
+        <td>7.</td>
+        <td>Singed</td>
+        <td>Top</td>
+        <td>2.9</td>
+        <td>52.7</td>
+        <td>0.9</td>
+        <td>3.9/5.7/7.9</td>
+      </tr>
+    </table>
+
+
+        </div>
+        <div class="col-md-2 height2 teemo">
+
+        </div>
+      </div>
+      <div class ="row">
+        <div class="col-md-12 height1">
+
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+      //when the document is loaded
+        $(document).ready(function() {
+          //this function gets a random color between 0 and 255
+          function getRandomColor() {
+            return Math.floor(Math.random() * 255);
+          }
+
+          //get all the elements (divs) with the class .randomColor
+          var randomColor = $(".randomColor");
+
+          //loop through all elements
+          //for each element, change the css background-color to RGB + three random colors
+          $.each(randomColor, function(index, item) {
+            $(this).css("background-color", "RGB(" + getRandomColor() + "," + getRandomColor() + "," + getRandomColor() + ")");
+          })
+
+
+        })
+
+
+
+
+      </script>
+  </body>
+</html>
