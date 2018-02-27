@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,600');
+</style>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Back-to-School Backpacks</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<style media="screen">
+  .height1 {
+    height: 100px;
+  }
+
+  .height2 {
+    height: 500px;
+  }
+
+  .height3 {
+    height: 50px;
+  }
+
+  .header {
+    margin-bottom: 2em;
+  }
+
+  .footer {
+    height: 50px;
+    margin-bottom: 3em;
+    background-color: black;
+  }
+
+  .flexSpaceAround{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  p, table, ul{
+    font-family: 'Oswald', sans-serif;
+    font-weight:400;
+  }
+
+  ul li{
+    list-style-type: none;
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+
+  }
+
+  h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight:600;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  th{
+    font-weight:600;
+  }
+
+  .ad{
+    background-image: url(images/ad.jpg);
+    max-width: 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
+
+  .black{
+    background-color: black;
+  }
+
+</style>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 height1 black header">
+        <h1>Back-to-School Backpacks</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 height3">
+        <ul class="flexSpaceAround">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Backpacks</a></li>
+          <li><a href="#">Other bags</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 output">
+
+      </div>
+      <div class="col-md-4 height2 ad">
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 footer">
+
+      </div>
+    </div>
+  </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      //when the document is loaded
+      $(document).ready(function() {
+        //this function gets a random color between 0 and 255
+        function getRandomColor() {
+          return Math.floor(Math.random() * 255);
+        }
+
+        //get all the elements (divs) with the class .randomColor
+        var randomColor = $(".randomColor");
+
+        //loop through all elements
+        //for each element, change the css background-color to RGB + three random colors
+        $.each(randomColor, function(index, item) {
+          $(this).css("background-color", "RGB(" + getRandomColor() + "," + getRandomColor() + "," + getRandomColor() + ")");
+        })
+
+
+      })
+    </script>
+
+
+
+    <script>
+      var bags = [{
+          "name": "Burton Export 25L Backpack",
+          "brand": "Burton",
+          "color": "black",
+          "imgUrl": "https://content.backcountry.com/images/items/small/BUR/BUR01KK/TRBKHETW.jpg"
+        },
+        {
+            "name": "High Stakes Backpack 25L",
+            "brand": "Jansport",
+            "color": "maroon",
+            "imgUrl": "https://www.moriluggage.com/media/catalog/product/cache/1/base/100x100/9df78eab33525d08d6e5fb8d27136e95/j/a/jansport-envoy-backpack-red.jpg"
+        },
+        {
+            "name": "Dyemond Goods - BACKPACK Swiss Military WWII repro",
+            "brand": "Benzak",
+            "color": "spotted grey",
+            "imgUrl": "https://static1.squarespace.com/static/52aebebde4b04dd8c25d5bf1/57962adacd0f6810d133d7b2/58dfb79717bffc2b3879bc2d/1491056764073/DG_Rucksack_S2.jpg?format=100w"
+        },
+        {
+            "name": "Old Skool Grey Backpack",
+            "brand": "Vans",
+            "color": "light grey",
+            "imgUrl": "https://littleburgundy.blob.core.windows.net/images/products/1_138141_SW.jpg"
+        },
+        {
+            "name": "TACOPS® M-9 Assault Medical Backpack",
+            "brand": "TSSI",
+            "color": "camo green",
+            "imgUrl": "https://static1.squarespace.com/static/56b354e9b09f950655e35066/5731fcd060b5e942e74fddb6/58514851725e25a4fa7db148/1481721947449/M9_rangergreen_outline.jpg?format=100w"
+        },
+
+      ];
+
+      $(document).ready(function() {
+        //$(".output").html("test output");
+        var html = "<table class='table table-striped table-hover'>" +
+          "<tr>" +
+          "<th>Picture</th>" +
+          "<th>Name</th>" +
+          "<th>Brand</th>" +
+          "<th>Color</th>" +
+          "</tr>";
+
+        //here is the loop of the array 'cats'
+        for (var i = 0; i < bags.length; i++) {
+          console.log("i " + i);
+          html += "<tr>" +
+            "<td><img src="+bags[i].imgUrl+" /></td>" +
+            "<td>"+bags[i].name+"</td>" +
+            "<td>"+bags[i].brand+"</td>" +
+            "<td>"+bags[i].color+"</td>" +
+            "</tr>";
+        }
+        html += "</table>";
+        $(".output").html(html);
+      });
+    </script>
+
+
+
+
+</body>
+
+</html>
