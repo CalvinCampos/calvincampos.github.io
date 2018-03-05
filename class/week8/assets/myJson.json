@@ -1,28 +1,52 @@
+
+
 [
   {
-    "class":"item active",
-    "caption":"skyline",
-    "source":"https://images.unsplash.com/photo-1460494936962-50da3863c15b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e9802a81ef5c00eaf2f3bbb9a7c8bf20&auto=format&fit=crop&w=1055&q=80"
+    "name":"daisy",
+    "colour":"white and yellow",
+    "source":"https://images.unsplash.com/photo-1496172498290-24446aba1ad8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3f59fd75e7cf76f2668c43c361e9b758&auto=format&fit=crop&w=1650&q=80",
+    "isPoisonous": false,
+    "isPrickly": false,
+    "size":"small"
   },
   {
-    "class":"item",
-    "caption":"lower east side",
-    "source":"https://images.unsplash.com/photo-1466064947541-371168912a17?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a17704d6ec056c294cf2939511c47971&auto=format&fit=crop&w=1050&q=80"
+    "name":"cactus",
+    "colour":"green",
+    "source":"https://images.unsplash.com/photo-1504648492881-a5150829085c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=770721c6c1140bfdc8fcdfb91cac6d98&auto=format&fit=crop&w=1650&q=80",
+    "isPoisonous": false,
+    "isPrickly": true,
+    "size":"big and small"
   },
   {
-    "class":"item",
-    "caption":"lower manhattan",
-    "source":"https://images.unsplash.com/photo-1499566727020-881da110a0b0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a4418b9d763f12cab34f582d564c32f2&auto=format&fit=crop&w=1113&q=80"
+    "name":"grass",
+    "colour":"green",
+    "source":"https://images.unsplash.com/photo-1452794268575-9819db203a5a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e9139dec6a136f85edabe37c82d8378b&auto=format&fit=crop&w=1650&q=80",
+    "isPoisonous": false,
+    "isPrickly": false,
+    "size":"very small"
   },
   {
-    "class":"item",
-    "caption":"view from brooklyn",
-    "source":"https://images.unsplash.com/27/winter-view.jpeg?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=710d6595ea5b4aa4b4c6e1ace9d212ca&auto=format&fit=crop&w=967&q=80"
+    "name":"sunflower",
+    "colour":"yellow and brown",
+    "source":"https://images.unsplash.com/photo-1455038894923-19f3608c9609?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c436c6d8013f2c8b55620e7dec54bab5&auto=format&fit=crop&w=1332&q=80",
+    "isPoisonous": false,
+    "isPrickly": false,
+    "size":"very small"
   },
   {
-    "class":"item",
-    "caption":"grand central station",
-    "source":"https://images.unsplash.com/photo-1423882503395-8571951e45cc?ixlib=rb-0.3.5&s=f8274c736c35a5f4feac7e6dc849f91a&auto=format&fit=crop&w=1050&q=80"
+    "name":"baby's breath",
+    "colour":"white",
+    "source":"https://images.unsplash.com/photo-1447137217103-62b8f00bdec6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4ad93326671d90bbbec084faf9811087&auto=format&fit=crop&w=1652&q=80",
+    "isPoisonous": false,
+    "isPrickly": false,
+    "size":"very small"
+  },
+  {
+    "name":"mountain-laurel",
+    "colour":"white and pink",
+    "source":"https://upload.wikimedia.org/wikipedia/commons/f/fb/Kalmia_Latifolia.jpg",
+    "isPoisonous": true,
+    "isPrickly": false,
+    "size":"very small"
   }
-
 ]
