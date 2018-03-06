@@ -43,23 +43,33 @@
       console.dir(data);
       //paste everything here
 
-      var dataHtml = "";
+      var dataHtml = "<table class='table table-striped table-hover'>" +
+      "<tr>"+
+      "<th>Name</th>"+
+      "<th>Colour</th>"+
+      "<th>category</th>"+
+      "<th>Poisonous?</th>"+
+      "<th>Prickly?</th>"+
+      "<th>Size</th>"+
+      "</tr>";
       for (var i = 0; i < data.length; i++) {
-        console.log("i " + i);
-        dataHtml += '<div class="' + data[i].name + '">' +
-          '<colour="' + data[i].colour + '">' +
-          '<img src="' + data[i].source + '">' +
-          '<isPoisonous="' + data[i].isPoisonous + '">' +
-          '<isPrickly="' + data[i].isPrickly + '">' +
-          '<size="' + data[i].size + '">' +
-          '</div>' +
-          '</div>';
+        dataHtml +=
+            "<tr>"+
+            "<td>"+data[i].name+"</td>"+
+            "<td>"+data[i].colour+"</td>"+
+            "<td>"+data[i].category+"</td>"+
+            "<td>"+data[i].isPoisonous+"</td>"+
+            "<td>"+data[i].isPrickly+"</td>"+
+            "<td>"+data[i].size+"</td>"+
+            "</tr>";
       }
 
+
+
+
       $(document).ready(function() {
-        $(".carousel-inner").html(dataHtml);
+        $(".output").html(dataHtml);
         //we need to call it with dynamic html
-        $(".carousel").carousel();
       })
 
 

@@ -4,7 +4,7 @@
   {
     "name":"daisy",
     "colour":"white and yellow",
-    "source":"https://images.unsplash.com/photo-1496172498290-24446aba1ad8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3f59fd75e7cf76f2668c43c361e9b758&auto=format&fit=crop&w=1650&q=80",
+    "category":"flower",
     "isPoisonous": false,
     "isPrickly": false,
     "size":"small"
@@ -12,7 +12,7 @@
   {
     "name":"cactus",
     "colour":"green",
-    "source":"https://images.unsplash.com/photo-1504648492881-a5150829085c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=770721c6c1140bfdc8fcdfb91cac6d98&auto=format&fit=crop&w=1650&q=80",
+    "category":"cactus",
     "isPoisonous": false,
     "isPrickly": true,
     "size":"big and small"
@@ -20,7 +20,7 @@
   {
     "name":"grass",
     "colour":"green",
-    "source":"https://images.unsplash.com/photo-1452794268575-9819db203a5a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e9139dec6a136f85edabe37c82d8378b&auto=format&fit=crop&w=1650&q=80",
+    "category":"weed",
     "isPoisonous": false,
     "isPrickly": false,
     "size":"very small"
@@ -28,7 +28,7 @@
   {
     "name":"sunflower",
     "colour":"yellow and brown",
-    "source":"https://images.unsplash.com/photo-1455038894923-19f3608c9609?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c436c6d8013f2c8b55620e7dec54bab5&auto=format&fit=crop&w=1332&q=80",
+    "category":"flower",
     "isPoisonous": false,
     "isPrickly": false,
     "size":"very small"
@@ -36,7 +36,7 @@
   {
     "name":"baby's breath",
     "colour":"white",
-    "source":"https://images.unsplash.com/photo-1447137217103-62b8f00bdec6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4ad93326671d90bbbec084faf9811087&auto=format&fit=crop&w=1652&q=80",
+    "category":"flower",
     "isPoisonous": false,
     "isPrickly": false,
     "size":"very small"
@@ -44,7 +44,7 @@
   {
     "name":"mountain-laurel",
     "colour":"white and pink",
-    "source":"https://upload.wikimedia.org/wikipedia/commons/f/fb/Kalmia_Latifolia.jpg",
+    "category":"flower",
     "isPoisonous": true,
     "isPrickly": false,
     "size":"very small"
