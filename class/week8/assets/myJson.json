@@ -4,7 +4,7 @@
   {
     "name":"daisy",
     "colour":"white and yellow",
-    "category":"flower",
+    "kind":"flower",
     "isPoisonous": false,
     "isPrickly": false,
     "size":"small"
@@ -12,7 +12,7 @@
   {
     "name":"cactus",
     "colour":"green",
-    "category":"cactus",
+    "kind":"cactus",
     "isPoisonous": false,
     "isPrickly": true,
     "size":"big and small"
@@ -20,7 +20,7 @@
   {
     "name":"grass",
     "colour":"green",
-    "category":"weed",
+    "kind":"weed",
     "isPoisonous": false,
     "isPrickly": false,
     "size":"very small"
@@ -28,7 +28,7 @@
   {
     "name":"sunflower",
     "colour":"yellow and brown",
-    "category":"flower",
+    "kind":"flower",
     "isPoisonous": false,
     "isPrickly": false,
     "size":"very small"
@@ -36,7 +36,7 @@
   {
     "name":"baby's breath",
     "colour":"white",
-    "category":"flower",
+    "kind":"flower",
     "isPoisonous": false,
     "isPrickly": false,
     "size":"very small"
@@ -44,7 +44,7 @@
   {
     "name":"mountain-laurel",
     "colour":"white and pink",
-    "category":"flower",
+    "kind":"flower",
     "isPoisonous": true,
     "isPrickly": false,
     "size":"very small"
