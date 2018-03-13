@@ -20,17 +20,20 @@
     @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400i,700i');
       body{
         max-width: 100%;
-        padding: 10px;
+        background-color: #d7eae1;
       }
       h1{
         text-align: center;
         font-family: 'Roboto Condensed', sans-serif;
         padding: 1em;
+        font-weight: 700;
+        font-size: 4em;
       }
       img{
         margin-left: auto;
         margin-right: auto;
         display: block;
+        width: 100%;
       }
       ul li{
         list-style-type: none;
@@ -40,56 +43,59 @@
         font-size: 1.5em;
         font-family: 'Roboto Condensed', sans-serif;
       }
+
+      ul a{
+        color: #e9455d;
+        font-weight: 700;
+        font-size: 1.5em;
+      }
       .flexSpaceAround{
         display: flex;
         justify-content: space-around;
         align-items: center;
       }
 
-      img{
-        width: 100%;
-      }
 
     </style>
 </head>
 <body>
 
 <header>
-  <h1> Cal's Diner Menu lol</h1>
+  <h1> Cal's Diner Menu</h1>
 </header>
 
 <nav>
   <ul class="flexSpaceAround">
-    <li>Appetizers</li>
-    <li>Soups & Salads</li>
-    <li>Mains</li>
-    <li>Sides</li>
-    <li>Beverages</li>
-    <li>Desserts</li>
+    <li> <a href="#aps">Appetizers</a> </li>
+    <li> <a href="#soups">Soups & Salads</a></li>
+    <li> <a href="#mains">Mains</a></li>
+    <li> <a href="#sides">Sides</a></li>
+    <li> <a href="#beverages">Beverages</a></li>
+    <li> <a href="#desserts">Desserts</a></li>
   </ul>
 </nav>
 
 <!-- Insert Appetizers PNG Mock up Here -->
-<img src="onePager1.png" alt="appetizer menu">
+<img src="onePager1.png" alt="appetizer menu" id="aps">
 
 <!-- Insert Soups and Salads PNG Mock up Here -->
-<img src="onePager2.png" alt="soups and salads menu">
+<img src="onePager2.png" alt="soups and salads menu" id="soups">
 
 
 <!-- Insert Mains PNG Mock up Here -->
-<img src="onePager3.png" alt="mains menu">
+<img src="onePager3.png" alt="mains menu" id="mains">
 
 
 <!-- Insert Sides PNG Mock up Here -->
-<img src="onePager4.png" alt="sides menu">
+<img src="onePager4.png" alt="sides menu" id="sides">
 
 
 <!-- Insert Beverages PNG Mock up Here -->
-<img src="onePager5.png" alt="beverages menu">
+<img src="onePager5.png" alt="beverages menu" id="beverages">
 
 
 <!-- Insert Desserts PNG Mock up Here -->
-<img src="onePager6.png" alt="desserts menu">
+<img src="onePager6.png" alt="desserts menu" id="desserts">
 
 
 
