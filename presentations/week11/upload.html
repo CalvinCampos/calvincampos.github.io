@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Rajdhani:400,500');
+</style>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cards Website Template</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<style media="screen">
+  body {
+    max-width: 100%;
+    font-family: 'Rajdhani', monospace;
+    padding: 1em;
+    background-color: black;
+    font-size: 20px;
+    color: white;
+  }
+
+  .height1 {
+    height: 200px;
+  }
+
+  .height2 {
+    height: 50px;
+  }
+
+  .outputArray {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .individualCard {
+    /*spaces out the cards */
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: black;
+    border: 1px solid white;
+    padding: 3%;
+  }
+
+  .cardInfo {
+    text-align: left;
+    padding: 5px;
+  }
+
+  .name {
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+
+  .itemButton {
+    text-align: right;
+    padding: 2.5em;
+  }
+
+  .headerImg{
+    background-image: url(img/city.jpg);
+    background-size: cover;
+    height: auto;
+    display: block;
+    max-width: 100%;
+  }
+
+h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    font-size: 150px;
+    text-align: right;
+    border-bottom: 1px solid white;
+    color: white;
+    opacity: 1;
+  }
+
+  ul li{
+    list-style-type: none;
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+  }
+
+  ul a{
+    color: white;
+  }
+
+  ul a:hover{
+    color: white;
+    text-decoration: none;
+  }
+
+  .flexSpaceAround{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  nav{
+    padding-top: 2em;
+  }
+
+span{
+  font-size: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+</style>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 headerImg">
+        <header>
+          <h1 class="city">cities.</h1>
+        </header>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <nav>
+          <ul class="flexSpaceAround">
+            <li> <a href="#">about</a> </li>
+            <li> <a href="#">weather</a> </li>
+            <li> <a href="#">more cities</a> </li>
+            <li> <a href="#">contact</a> </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 cardSection height2">
+      </div>
+      <div class="col-md-12">
+        <div class="outputArray">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 height2">
+        <hr>
+        <span>© 2018 cities inc.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script>
+    //These are your Object Arrays
+    var arrayTopic = [{
+        "name": "Toronto",
+        "population": "2 million",
+        "country": "Canada",
+        "language": "French and English",
+        "more": "More info"
+      },
+      {
+        "name": "Tokyo",
+        "population": "13 million",
+        "country": "Japan",
+        "language": "Japanese",
+        "more": "More info"
+      },
+      {
+        "name": "Paris",
+        "population": "2 million",
+        "country": "France",
+        "language": "French",
+        "more": "More info"
+      },
+      {
+        "name": "London",
+        "population": "8.7 million",
+        "country": "United Kingdom",
+        "language": "English",
+        "more": "More info"
+      },
+      {
+        "name": "Chicago",
+        "population": "2.7 million",
+        "country": "USA",
+        "language": "English",
+        "more": "More info"
+      },
+      {
+        "name": "Sydney",
+        "population": "5 million",
+        "country": "Australia",
+        "language": "English",
+        "more": "More info"
+      }
+
+
+    ];
+
+
+
+
+
+
+    $(document).ready(function() {
+      $(".output").html("test output");
+      var html = ""; // This is the Variable to hold the html -> without this, nothing will show up
+
+      //HERE IS YOUR LOOP
+
+      /*      Remember that each card needs the following things:
+              - Gets the user do something such as redirecting to another page (this can be done with buttons, animations, etc.)
+              - Include and style the image
+              - Be organized in a specific way (HINT: Flexbox)
+       */
+
+      for (var i = 0; i < arrayTopic.length; i++) { //change arrayTopic to whatever you
+        html += "<div class='panel panel-default individualCard'>" +
+          //  "<div><img class='img-responsive' src='" + arrayTopic[i].imgUrl + "' /></div>" + //change the red text to the keys in your Array
+          "<div class='cardInfo nameLabel name'>" + arrayTopic[i].name + "</div>" + //change the red text to the keys in your Array
+          "<div class='cardInfo ageLabel'>" + arrayTopic[i].population + "</div>" + //change the red text to the keys in your Array
+          "<div class='cardInfo ownerLabel'>" + arrayTopic[i].country + "</div>" + //change the red text to the keys in your Array
+          "<div class='cardInfo ownerLabel'>" + arrayTopic[i].language + "</div>" +
+          "<div class='itemButton'><button type='button' class='btn btn-default'>" + arrayTopic[i].more + "</button></div>" + //Button Template
+          "</div>";
+      }
+      $(".outputArray").html(html); //outputs the loop onto the html
+
+    });
+  </script>
+
+
+  <script>
+    //   // THIS IS FOR IF YOU WANT TO GET A JSON FILE FROM ONLINE
+    //   var url = "https://zabrinabolasco.github.io/class/week8/assets/cities.json" //JSON Link goes here (it's currently a template right now, don't worry about it)
+    //   console.log("You need a website — why not do it yourself?"); //message appears so you can test your JavaScript here
+    //
+    //   // This is the defined function
+    //   function cardShuffle(d) {
+    //     console.dir(d);
+    //
+    //     var html = ""; // This is the variable to hold the html
+    //
+    //     // THIS IS THE LOOP //
+    //
+    //     /*Remember that each card needs the following things:
+    //         - Gets the user do something such as redirecting to another page (this can be done with buttons, animations, etc.)
+    //         - Include an image
+    //         - Be organized in a specific way (HINT: JSON)
+    //     */
+    //
+    //     //Here is the loop of the Array you made
+    //     for (var i = 0; i < d.length; i++) {
+    //       html += "<div>" + d[i].name + "</div>"; //Image
+    //       html += "<div>" + d[i].texture + "</div>"; // Item 1
+    //       html += "<div>" + d[i].temperature + "</div>"; // Item 2
+    //       html += "<div>" + d[i].origin + "</div>"; // Item 3
+    //       html += "<div>" + d[i].twelve + "</div>"; // Item 4
+    //       html += "<button type='button' class='itemButton btn btn-default'>Click!</button>"; //Design your button here, make sure you put
+    //       html += "</div>";
+    //     }
+    //
+    //     //when the document is ready, this loads the JSON into the class 'cardSection' in the html
+    //     $(document).ready(function() {
+    //       $(".cardSection").html(html);
+    //     })
+    //   }
+    //
+    //   // Gets the JSON from a url
+    //   $.get(url)
+    //     .done(function(data) { //what comes back is put into "data"
+    //       console.log("success! ");
+    //       //Takes the "data and pushes it to a function => cardShuffle
+    //       cardShuffle(data);
+    //     })
+    //
+    //     //If it fails, then this message should appear
+    //     .fail(function(data) {
+    //       console.log("failed " + JSON.stringify(data));
+    //     })
+  </script>
+</body>
+
+</html>
